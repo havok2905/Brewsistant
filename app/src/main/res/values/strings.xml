@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">Brewsistant</string>
+
+    <string name="primingSugarCalculatorHeaderText">Priming Sugar Calculator</string>
+
+    <string name="primingSugarCalculatorStyleLabelText">Style</string>
+
+    <string name="primingSugarCalculatorSugarTypeLabelText">Sugar Type</string>
+
+    <string name="primingSugarCalculatorTemperatureLabelText">Temperature ( F )</string>
+
+    <string name="primingSugarCalculatorVolumeLabelText">Volume ( G )</string>
+
+    <string-array name="primingSugarCalculatorStyleStrings">
+        <item>American IPA</item>
+        <item>Imperial IPA</item>
+    </string-array>
+
+    <string-array name="primingSugarCalculatorSugarStrings">
+        <item>Dextrose</item>
+        <item>Sucrose</item>
+        <item>Light Dry Malt Extract</item>
+    </string-array>
+
+    <string name="primingSugarCalculatorInGrams">In Grams: </string>
+
+    <string name="primingSugarCalculatorInOzs">In OZs: </string>
+
+    <string name="primingSugarCalculatorInCups">In Cups: </string>
+
+</resources>
