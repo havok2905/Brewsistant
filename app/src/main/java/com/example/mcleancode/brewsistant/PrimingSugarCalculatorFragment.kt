@@ -88,9 +88,9 @@ class PrimingSugarCalculatorFragment: Fragment() {
     }
 
     private fun updateAnswerText(v: View, beerVolume: BeerVolume) {
-        answerGramsTextView(v).setText(beerVolume.grams().toString())
-        answerOzsTextView(v).setText(beerVolume.ozs().toString())
-        answerCupsTextView(v).setText(beerVolume.cups().toString())
+        answerGramsTextView(v).setText(beerVolume.grams.toString())
+        answerOzsTextView(v).setText(beerVolume.ozs.toString())
+        answerCupsTextView(v).setText(beerVolume.cups.toString())
     }
 
     private fun setupStyleEvents(v: View) {
