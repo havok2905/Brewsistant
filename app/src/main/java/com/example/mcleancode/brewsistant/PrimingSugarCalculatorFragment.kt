@@ -96,35 +96,33 @@ class PrimingSugarCalculatorFragment: Fragment() {
     private fun setupStyleEvents(v: View) {
         val primingSugarStyleSpinnerView = primingSugarStyleSpinnerView(v)
 
-        primingSugarStyleSpinnerView.setOnItemSelectedListener(
-                object: AdapterView.OnItemSelectedListener {
-                    override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
-                        styleInput = parent.getSelectedItem().toString()
-                        submitForm(v)
-                    }
-
-                    override fun onNothingSelected(parent: AdapterView<out Adapter>?) {
-                        // Do nothing.
-                    }
+        primingSugarStyleSpinnerView.onItemSelectedListener =
+            object: AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
+                    styleInput = parent.selectedItem.toString()
+                    submitForm(v)
                 }
-        )
+
+                override fun onNothingSelected(parent: AdapterView<out Adapter>?) {
+                    // Do nothing.
+                }
+            }
     }
 
     private fun setupSugarEvents(v: View) {
         val primingSugarSugarSpinnerView = primingSugarSugarSpinnerView(v)
 
-        primingSugarSugarSpinnerView.setOnItemSelectedListener(
-                object: AdapterView.OnItemSelectedListener {
-                    override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
-                        sugarTypeInput = parent.getSelectedItem().toString()
-                        submitForm(v)
-                    }
-
-                    override fun onNothingSelected(parent: AdapterView<out Adapter>?) {
-                        // Do nothing.
-                    }
+        primingSugarSugarSpinnerView.onItemSelectedListener =
+            object: AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
+                    sugarTypeInput = parent.selectedItem.toString()
+                    submitForm(v)
                 }
-        )
+
+                override fun onNothingSelected(parent: AdapterView<out Adapter>?) {
+                    // Do nothing.
+                }
+            }
     }
 
     private fun setupTemperatureEvents(v: View) {
