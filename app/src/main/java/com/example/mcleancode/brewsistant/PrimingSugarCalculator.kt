@@ -1,6 +1,6 @@
 package com.example.mcleancode.brewsistant
 
-class PrimingSugarCalculator() {
+class PrimingSugarCalculator {
     fun run(temperature: Double, gallons: Double, style: String, sugarType: String): BeerVolume {
         val co2 = convertCo2(style)
         val sugarEfficiency = convertSugarEfficiency(sugarType)
