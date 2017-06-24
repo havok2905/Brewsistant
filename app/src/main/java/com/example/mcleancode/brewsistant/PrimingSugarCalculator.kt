@@ -7,17 +7,17 @@ class PrimingSugarCalculator() {
         return formula(temperature, gallons, co2, sugarEfficiency)
     }
 
-    private fun formatedString(value: String): String {
+    private fun formattedString(value: String): String {
         return value.replace(" ", "")
     }
 
     private fun convertCo2(style: String): Double {
-        val key = formatedString(style)
+        val key = formattedString(style)
         return Styles.valueOf(key).co2
     }
 
     private fun convertSugarEfficiency(sugarType: String): Double {
-        val key = formatedString(sugarType)
+        val key = formattedString(sugarType)
         return Sugars.valueOf(key).efficiency
     }
 
