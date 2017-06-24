@@ -6,132 +6,15 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:id="@+id/activity_main"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <LinearLayout
-        android:id="@+id/primingSugarCalculatorHeader"
-        style="@style/BrewsistantScreenHeader">
-
-        <TextView
-            android:id="@+id/primingSugarCalculatorHeaderText"
-            android:text="@string/primingSugarCalculatorHeaderText"
-            style="@style/BrewsistantHeaderOne"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/primingSugarCalculatorStyleFieldset"
-        android:layout_below="@+id/primingSugarCalculatorHeader"
-        style="@style/BrewsistantFieldsetTheme">
-
-        <TextView
-            android:id="@+id/primingSugarCalculatorStyleLabel"
-            android:text="@string/primingSugarCalculatorStyleLabelText"
-            style="@style/BrewsistantFieldLabelTheme" />
-
-        <Spinner
-            android:id="@+id/primingSugarCalculatorStyleField"
-            style="@style/BrewsistantSpinnerFieldTheme" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/primingSugarCalculatorSugarTypeFieldset"
-        android:layout_below="@+id/primingSugarCalculatorStyleFieldset"
-        style="@style/BrewsistantFieldsetTheme">
-
-        <TextView
-            android:id="@+id/primingSugarCalculatorSugarTypeLabel"
-            android:text="@string/primingSugarCalculatorSugarTypeLabelText"
-            style="@style/BrewsistantFieldLabelTheme"/>
-
-        <Spinner
-            android:id="@+id/primingSugarCalculatorSugarTypeField"
-            style="@style/BrewsistantSpinnerFieldTheme" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/primingSugarCalculatorTemperatureFieldset"
-        android:layout_below="@id/primingSugarCalculatorSugarTypeFieldset"
-        style="@style/BrewsistantFieldsetTheme">
-
-        <TextView
-            android:id="@+id/primingSugarCalculatorTemperatureLabel"
-            android:text="@string/primingSugarCalculatorTemperatureLabelText"
-            style="@style/BrewsistantFieldLabelTheme"/>
-
-        <EditText
-            android:id="@+id/primingSugarCalculatorTemperatureField"
-            style="@style/BrewsistantNumberFieldTheme"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/primingSugarCalculatorVolumeFieldset"
-        android:layout_below="@+id/primingSugarCalculatorTemperatureFieldset"
-        style="@style/BrewsistantFieldsetTheme">
-
-        <TextView
-            android:id="@+id/primingSugarCalculatorVolumeLabel"
-            android:text="@string/primingSugarCalculatorVolumeLabelText"
-            style="@style/BrewsistantFieldLabelTheme"/>
-
-        <EditText
-            android:id="@+id/primingSugarCalculatorVolumeField"
-            style="@style/BrewsistantNumberFieldTheme"/>
-
-    </LinearLayout>
-
-    <RelativeLayout
+    <fragment
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/primingSugarCalculatorVolumeFieldset">
-
-        <LinearLayout
-            android:id="@+id/primingSugarCalculatorLabelsFieldset"
-            android:layout_alignParentLeft="true"
-            style="@style/BrewsistantPrimingSugarAnswerFieldset">
-
-            <TextView
-                android:id="@+id/primingSugarCalculatorLabelInGrams"
-                android:text="@string/primingSugarCalculatorInGrams"
-                style="@style/BrewsistantPrimingSugarAnswerLabelTheme"/>
-
-            <TextView
-                android:id="@+id/primingSugarCalculatorLabelInOzs"
-                android:text="@string/primingSugarCalculatorInOzs"
-                style="@style/BrewsistantPrimingSugarAnswerLabelTheme"/>
-
-            <TextView
-                android:id="@+id/primingSugarCalculatorLabelInCups"
-                android:text="@string/primingSugarCalculatorInCups"
-                style="@style/BrewsistantPrimingSugarAnswerLabelTheme"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/primingSugarCalculatorAnswersFieldset"
-            android:layout_alignParentRight="true"
-            style="@style/BrewsistantPrimingSugarAnswerFieldset">
-
-            <TextView
-                android:id="@+id/primingSugarCalculatorAnswerInGrams"
-                android:text=""
-                style="@style/BrewsistantPrimingSugarAnswerValueTheme"/>
-
-            <TextView
-                android:id="@+id/primingSugarCalculatorAnswerInOzs"
-                android:text=""
-                style="@style/BrewsistantPrimingSugarAnswerValueTheme"/>
-
-            <TextView
-                android:id="@+id/primingSugarCalculatorAnswerInCups"
-                android:text=""
-                style="@style/BrewsistantPrimingSugarAnswerValueTheme"/>
-        </LinearLayout>
-    </RelativeLayout>
-
+        android:layout_height="match_parent"
+        android:name="com.example.mcleancode.brewsistant.PrimingSugarCalculatorFragment"
+        android:id="@+id/primingSugarCalculatorFragment"/>
 </RelativeLayout>
