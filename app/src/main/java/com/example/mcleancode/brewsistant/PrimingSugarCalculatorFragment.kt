@@ -63,7 +63,7 @@ class PrimingSugarCalculatorFragment: Fragment() {
                 activity, R.array.primingSugarCalculatorStyleStrings,
                 android.R.layout.simple_spinner_item)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter)
+        spinner.adapter = adapter
     }
 
     private fun setupPrimingSugarSugarSpinner(v: View) {
@@ -72,7 +72,7 @@ class PrimingSugarCalculatorFragment: Fragment() {
                 activity, R.array.primingSugarCalculatorSugarStrings,
                 android.R.layout.simple_spinner_item)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter)
+        spinner.adapter = adapter
     }
 
     private fun submitForm(view: View) {
@@ -88,9 +88,9 @@ class PrimingSugarCalculatorFragment: Fragment() {
     }
 
     private fun updateAnswerText(v: View, beerVolume: BeerVolume) {
-        answerGramsTextView(v).setText(beerVolume.grams.toString())
-        answerOzsTextView(v).setText(beerVolume.ozs.toString())
-        answerCupsTextView(v).setText(beerVolume.cups.toString())
+        answerGramsTextView(v).text = beerVolume.grams.toString()
+        answerOzsTextView(v).text = beerVolume.ozs.toString()
+        answerCupsTextView(v).text = beerVolume.cups.toString()
     }
 
     private fun setupStyleEvents(v: View) {
