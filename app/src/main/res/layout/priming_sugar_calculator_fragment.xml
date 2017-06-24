@@ -58,6 +58,7 @@
 
         <EditText
             android:id="@+id/primingSugarCalculatorTemperatureField"
+            android:imeOptions="actionSend"
             style="@style/BrewsistantNumberFieldTheme"/>
 
     </LinearLayout>
@@ -74,6 +75,7 @@
 
         <EditText
             android:id="@+id/primingSugarCalculatorVolumeField"
+            android:imeOptions="actionSend"
             style="@style/BrewsistantNumberFieldTheme"/>
 
     </LinearLayout>

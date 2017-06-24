@@ -2,6 +2,8 @@ package com.example.mcleancode.brewsistant
 
 import android.app.Fragment
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -127,23 +129,37 @@ class PrimingSugarCalculatorFragment: Fragment() {
 
     private fun setupTemperatureEvents(v: View) {
         val temperatureNumberFieldView = temperatureNumberFieldView(v)
-
-        temperatureNumberFieldView.setOnFocusChangeListener { _, hasFocus ->
-            if (!hasFocus) {
+        temperatureNumberFieldView.addTextChangedListener(object: TextWatcher {
+            override fun afterTextChanged(p0: Editable?) {
                 temperatureInput = temperatureNumberFieldView.text.toString()
                 submitForm(v)
             }
-        }
+
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                // Do Nothing
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                // Do Nothing
+            }
+        })
     }
 
     private fun setupVolumeEvents(v: View) {
         val volumeNumberFieldView = volumeNumberFieldView(v)
-
-        volumeNumberFieldView.setOnFocusChangeListener { _, hasFocus ->
-            if (!hasFocus) {
+        volumeNumberFieldView.addTextChangedListener(object: TextWatcher {
+            override fun afterTextChanged(p0: Editable?) {
                 volumeInput = volumeNumberFieldView.text.toString()
                 submitForm(v)
             }
-        }
+
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                // Do Nothing
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                // Do Nothing
+            }
+        })
     }
 }
