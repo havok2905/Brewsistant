@@ -13,8 +13,62 @@
     <string name="primingSugarCalculatorVolumeLabelText">Volume ( G )</string>
 
     <string-array name="primingSugarCalculatorStyleStrings">
-        <item>American IPA</item>
-        <item>Imperial IPA</item>
+        <item>American Brown Ale</item>
+        <item>American Dark</item>
+        <item>American Premium</item>
+        <item>American Standard</item>
+        <item>American Style Pale Ale</item>
+        <item>American Wheat Beer</item>
+        <item>Altbier</item>
+        <item>Barley Wine</item>
+        <item>Belgian Ale</item>
+        <item>Belgian Strong Ale</item>
+        <item>Berliner Weisse</item>
+        <item>Bohemian Pilsener</item>
+        <item>Brown Porter</item>
+        <item>California Common Beer</item>
+        <item>Classic Dry Irish</item>
+        <item>Classic English Pale Ale</item>
+        <item>Cream Ale</item>
+        <item>Doppelbock</item>
+        <item>Dortmund</item>
+        <item>Dry</item>
+        <item>Dubbel</item>
+        <item>Dunkelweizen</item>
+        <item>Eisbock</item>
+        <item>English Brown Ale</item>
+        <item>English Extra Special</item>
+        <item>English Mild Ale</item>
+        <item>English Old Ale</item>
+        <item>English Ordinary</item>
+        <item>English Special</item>
+        <item>Flanders Brown</item>
+        <item>Foreign Style</item>
+        <item>German Pilsener</item>
+        <item>Helles Bock</item>
+        <item>Imperial Stout</item>
+        <item>India Pale Ale</item>
+        <item>Kolsch</item>
+        <item>Lambic Fruit</item>
+        <item>Lambic Gueuze</item>
+        <item>Lite</item>
+        <item>Munich Dunkel</item>
+        <item>Munich Helles</item>
+        <item>Oktoberfest</item>
+        <item>Rauchbier</item>
+        <item>Robust Porter</item>
+        <item>Schwarzbier</item>
+        <item>Scottish Light</item>
+        <item>Scottish Heavy</item>
+        <item>Scottish Export</item>
+        <item>Strong Scotch Ale</item>
+        <item>Sweet Stout</item>
+        <item>Traditional German Dark</item>
+        <item>Trippel</item>
+        <item>Vienna</item>
+        <item>Weissbier</item>
+        <item>Weizenbock</item>
+        <item>White</item>
     </string-array>
 
     <string-array name="primingSugarCalculatorSugarStrings">
